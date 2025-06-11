@@ -1,0 +1,22 @@
+.container {
+  transition: 0.3s;
+}
+
+.light,
+.dark {
+  outline: 1px solid;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.light:hover {
+  background-color: rgba(50, 50, 50, 0.2);
+}
+
+.dark:hover {
+  background-color: black;
+}
+
+i {
+  cursor: pointer;
+}
