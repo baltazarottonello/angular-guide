@@ -1,1 +1,9 @@
+.container {
+  height: 100%;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
 
+.dark {
+  background-color: rgb(50, 50, 50);
+  color: azure;
+}

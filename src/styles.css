@@ -1,3 +1,5 @@
+@import "bootstrap-icons/font/bootstrap-icons.css";
+
 :root {
   --color-bg: rgb(50, 50, 50);
   --color-primary: #01eafa;
@@ -8,11 +10,12 @@
 
 html,
 body {
-  background-color: var(--color-bg);
   height: 100%;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
+  display: inline;
   margin: 0;
   padding: 0;
 }
