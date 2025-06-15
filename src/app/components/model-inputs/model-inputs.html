@@ -1,0 +1,5 @@
+<p>
+  Counter signal value from parent component <i>ModelInputs</i>: {{count()}}
+</p>
+<app-html-card [textValues]="textLines" />
+<app-counter (valueChange)="logCounterChange()" [(value)]="count" />

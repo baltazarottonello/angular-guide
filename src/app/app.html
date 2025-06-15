@@ -1,4 +1,9 @@
 <div [ngClass]="themeService.theme()" class="container">
   <app-header />
+  <p>host-context():</p>
+  <app-csshost />
+  <p>Input values:</p>
+  <app-input [themeValue]="themeService.theme()" />
+  <app-input-copy [themeValue]="'otherValue'" />
   <router-outlet />
 </div>

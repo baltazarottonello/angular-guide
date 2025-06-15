@@ -1,0 +1,12 @@
+<p>
+  When extending a component class, properties (<b>NOT</b> values) are inherited
+  by the child class.<br />
+  Theme = [{{themeValue()}}] property <i>inhertied</i> from component class
+  <i>InputComponent</i>, the value is specific to each component. <br />You can
+  pass a input to the child component, without creating the inputs again.
+</p>
+<app-html-card [textValues]="textLines2" />
+<app-html-card [textValues]="textLines" />
+
+<p>Model inputs:</p>
+<app-model-inputs />

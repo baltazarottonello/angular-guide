@@ -1,7 +1,9 @@
 @import "bootstrap-icons/font/bootstrap-icons.css";
 
 :root {
-  --color-bg: rgb(50, 50, 50);
+  --color-bg-dark: rgb(50, 50, 50);
+  --color-bg-dark-hover: black;
+  --color-bg-light-hover: rgba(50, 50, 50);
   --color-primary: #01eafa;
   --color-secondary: #00a2ad;
   --color-error: #f10800;

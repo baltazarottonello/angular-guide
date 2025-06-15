@@ -1,0 +1,14 @@
+:host {
+  display: flex;
+  padding: 1rem;
+  width: fit-content;
+  margin-left: 5rem;
+}
+
+:host-context(.dark.container) {
+  background-color: var(--color-secondary);
+}
+
+:host-context(.light.container) {
+  background-color: var(--color-primary);
+}

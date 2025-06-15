@@ -1,0 +1,20 @@
+<p>
+  This button is for the child component, the value of the input is to way
+  binding, when the child updates the value,<br />
+  the value propagates to the parent, who renders the value.
+</p>
+<p>
+  Click the button and see the value above in the ModelInputs component
+  template.
+</p>
+<button (click)="startCounter()">Start counter</button>
+<app-html-card [textValues]="textLines" />
+<p>Implicit change events:</p>
+<p>
+  When you declare a model input in a component or directive, <br />Angular
+  automatically creates a corresponding output for that model. Which can be
+  listened to, and handled by a method declared in the parent component.<br />
+  Click the button "Start counter" and open the DevTools to see the handler
+  output.
+</p>
+<app-html-card [textValues]="textLines2" />

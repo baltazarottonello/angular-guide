@@ -8,7 +8,7 @@
     
   export const config = {
     path: "/*",
-    excludedPath: ["/.netlify/*","/favicon.ico","/index.csr.html","/main-MUZX2XMK.js","/media/bootstrap-icons-CVBWLLHT.woff2","/media/bootstrap-icons-VQNJTM6Q.woff","/styles-AUXBNVP7.css"],
+    excludedPath: ["/.netlify/*","/favicon.ico","/index.csr.html","/main-5HWULABR.js","/media/bootstrap-icons-CVBWLLHT.woff2","/media/bootstrap-icons-VQNJTM6Q.woff","/styles-OPMJVTUY.css"],
     generator: "@netlify/angular-runtime@2.4.0",
     name: "Angular SSR",
   };
