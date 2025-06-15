@@ -1,4 +1,9 @@
-import { ChangeDetectionStrategy, Component } from "@angular/core";
+import {
+  ChangeDetectionStrategy,
+  Component,
+  input,
+  ViewEncapsulation,
+} from "@angular/core";
 
 @Component({
   selector: "app-csshost",
@@ -7,4 +12,4 @@ import { ChangeDetectionStrategy, Component } from "@angular/core";
   styleUrl: "./csshost.css",
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class CssHostComponentTest {}
+export class CssHostComponent {}

@@ -7,3 +7,9 @@
   background-color: rgb(50, 50, 50);
   color: azure;
 }
+
+p {
+  margin-left: 1rem;
+  text-decoration: underline wavy rgb(64, 255, 144);
+  text-underline-offset: 5px;
+}
