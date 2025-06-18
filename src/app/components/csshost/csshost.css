@@ -1,14 +1,18 @@
 :host {
   display: flex;
+  flex-direction: column;
   padding: 1rem;
   width: fit-content;
-  margin-left: 5rem;
 }
 
-:host-context(.dark.container) {
-  background-color: var(--color-secondary);
+.coloured {
+  padding: 1rem;
 }
 
-:host-context(.light.container) {
-  background-color: var(--color-primary);
+:host-context(.dark.container) .coloured {
+  background-color: rgb(255, 104, 104);
+}
+
+:host-context(.light.container) .coloured {
+  background-color: chartreuse;
 }

@@ -1,4 +1,12 @@
-import { ChangeDetectionStrategy, Component, signal } from "@angular/core";
+import {
+  ChangeDetectionStrategy,
+  Component,
+  ComponentRef,
+  createComponent,
+  signal,
+  viewChild,
+  ViewContainerRef,
+} from "@angular/core";
 import { Counter } from "../counter/counter";
 import { HtmlCard } from "../html-card/html-card";
 

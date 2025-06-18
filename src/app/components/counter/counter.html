@@ -7,9 +7,9 @@
   Click the button and see the value above in the ModelInputs component
   template.
 </p>
-<button (click)="startCounter()">Start counter</button>
+<button (click)="startCounter($event)">Start counter</button>
 <app-html-card [textValues]="textLines" />
-<p>Implicit change events:</p>
+<p class="subtitle">Implicit change events:</p>
 <p>
   When you declare a model input in a component or directive, <br />Angular
   automatically creates a corresponding output for that model. Which can be

@@ -9,5 +9,5 @@
 }
 
 :host-context(.container.light) .container {
-  background-color: white;
+  background-color: rgba(50, 50, 50, 0.2);
 }

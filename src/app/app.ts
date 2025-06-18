@@ -6,6 +6,7 @@ import { NgClass } from "@angular/common";
 import { CssHostComponent } from "./components/csshost/csshost";
 import { InputComponent } from "./components/input/input";
 import { InputComponentCopy } from "./components/inputCopy/inputCopy";
+import { ContentProjection } from "./components/content-projection/content-projection";
 
 @Component({
   selector: "app-root",
@@ -16,6 +17,7 @@ import { InputComponentCopy } from "./components/inputCopy/inputCopy";
     CssHostComponent,
     InputComponent,
     InputComponentCopy,
+    ContentProjection,
   ],
   templateUrl: "./app.html",
   styleUrl: "./app.css",

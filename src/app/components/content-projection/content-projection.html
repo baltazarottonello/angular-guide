@@ -1,0 +1,10 @@
+<p class="title">Content projection:</p>
+<p>
+  Whit a special element placeholder "< ng-content />", you can specify content
+  inside a component host element
+</p>
+<app-html-card [textValues]="textLines" />
+<app-content-container>
+  <app-title>Title content</app-title>
+  <app-subtitle>Subtitle content</app-subtitle>
+</app-content-container>

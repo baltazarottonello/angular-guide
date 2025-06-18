@@ -12,7 +12,8 @@ export class Counter {
   intervalId!: any;
   value = model(0);
 
-  startCounter() {
+  startCounter(event: any) {
+    console.log(event);
     if (this.intervalId) {
       clearInterval(this.intervalId);
       this.value.set(0);
