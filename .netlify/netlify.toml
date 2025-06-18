@@ -13,7 +13,7 @@ package = "@netlify/angular-runtime"
 
 [build]
 publish = "C:\\Users\\balti\\Escritorio\\Dev\\guides\\angular-guide\\dist\\angular-guide\\browser"
-publishOrigin = "inline"
+publishOrigin = "config"
 commandOrigin = "ui"
 command = "npm run build"
 
