@@ -1,0 +1,12 @@
+<p class="title">View Queries:</p>
+<p>
+  We have a child component called Title, which has a property someProp with a
+  value.
+</p>
+<app-title [textInput]="'Título'" />
+<p>
+  If we make a query of type ViewChild, we will have access to its “view” which
+  is the content of the template of the component already rendered.
+</p>
+<p>Value: {{childProp()}}</p>
+<app-html-card [textValues]="textLines" />

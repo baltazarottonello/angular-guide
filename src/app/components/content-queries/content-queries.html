@@ -1,0 +1,10 @@
+<p class="title">Content queries:</p>
+<ng-content></ng-content>
+Value of property in projected component:
+<p>{{childProp()}}</p>
+<p>
+  In this case, we have a content template (content is provided/projected by the
+  parent) instead of a component in the template, to access the properties of
+  the components that will occupy the place of the content template, we must use
+  a query of type contentChild.
+</p>

@@ -14,11 +14,17 @@ import {
   OnChanges,
   OnInit,
   SimpleChanges,
+  OnDestroy,
+  Renderer2,
+  ViewRef,
+  signal,
+  viewChild,
 } from "@angular/core";
+import { ChildNode } from "../child-node/child-node";
 
 @Component({
   selector: "app-lifecycle",
-  imports: [],
+  imports: [ChildNode],
   templateUrl: "./lifecycle.html",
   styleUrl: "./lifecycle.css",
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -33,9 +39,11 @@ export class Lifecycle
     AfterViewInit,
     AfterViewChecked
 {
+  childNodeVisible = signal(true);
   myInput = input(0);
   element = inject(ElementRef);
   nativeElement = this.element.nativeElement;
+  renderer = inject(Renderer2);
 
   constructor() {
     console.log(
@@ -112,5 +120,9 @@ export class Lifecycle
     console.log(
       "ngDoCheck(): Runs every time this component is checked for changes, with the OnPush detection strategy, we limit the number of times this hook is executed."
     );
+  }
+
+  hideChildNode() {
+    this.childNodeVisible.update((prev) => !prev);
   }
 }

@@ -14,6 +14,9 @@ import { InputComponent } from "./components/input/input";
 import { InputComponentCopy } from "./components/inputCopy/inputCopy";
 import { ContentProjection } from "./components/content-projection/content-projection";
 import { Lifecycle } from "./components/lifecycle/lifecycle";
+import { ViewQueries } from "./components/view-queries/view-queries";
+import { ContentQueries } from "./components/content-queries/content-queries";
+import { Title } from "./components/title/title";
 
 @Component({
   selector: "app-root",
@@ -26,6 +29,9 @@ import { Lifecycle } from "./components/lifecycle/lifecycle";
     InputComponentCopy,
     ContentProjection,
     Lifecycle,
+    ViewQueries,
+    ContentQueries,
+    Title,
   ],
   templateUrl: "./app.html",
   styleUrl: "./app.css",

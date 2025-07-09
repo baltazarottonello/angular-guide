@@ -1,1 +1,11 @@
+<p class="title">Component Lifecycle</p>
 
+<p>Open DevTools to see the execution of the hooks in order.</p>
+
+<button (click)="hideChildNode()">
+  Hide the child node to see ngOnDestroy in action in the DevTools
+</button>
+
+@if(childNodeVisible()){
+<app-child-node />
+}

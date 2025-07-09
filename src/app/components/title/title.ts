@@ -1,12 +1,14 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, input } from "@angular/core";
 
 @Component({
-  selector: 'app-title',
+  selector: "app-title",
   imports: [],
-  templateUrl: './title.html',
-  styleUrl: './title.css',
-  changeDetection: ChangeDetectionStrategy.OnPush
+  templateUrl: "./title.html",
+  styleUrl: "./title.css",
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class Title {
+  textInput = input();
 
+  someProp = "Horse";
 }
